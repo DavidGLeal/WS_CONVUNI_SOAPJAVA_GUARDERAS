@@ -1,0 +1,17 @@
+La aplicación de consola posee configuraciones especiales para mejorar la experiencia de usuario.
+Algunas de estas configuraciones no son compatibles con la consola de NetBeans.
+Por lo tanto, se recomienda ejecutar en el símbolo de sistema
+de Windows para asegurar un correcto funcionamiento de la aplicación. Para eso, es necesario Java 8. Si se tiene otra versión
+de Java, se puede configurar temporalmente la consola para que use Java8, con los siguientes comandos:
+
+	set JAVA_HOME="<Ubicación del JDK>/jdk1.8.0_202"
+	set PATH=%JAVA_HOME%\bin;%PATH%
+
+La aplicación correrá al ejecutar el archivo WS_CONVUNI_SOAPJAVA_CLICON.jar, ubicado en la carpeta dist.
+
+	java -jar WS_CONVUNI_SOAPJAVA_CLICON.jar
+
+Gracias por la atención prestada.
+
+Atentamente,
+David Guarderas Leal
