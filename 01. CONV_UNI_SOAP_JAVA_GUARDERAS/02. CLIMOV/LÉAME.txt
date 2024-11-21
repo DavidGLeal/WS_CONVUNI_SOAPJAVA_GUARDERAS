@@ -1,0 +1,20 @@
+El consumo del servicio web SOAP DOTNET desde la aplicación móvil presenta una particularidad: la aplicación no puede consumir
+el servicio desde localhost, porque entiende a localhost como el dispositivo móvil en el que se ejecuta la aplicación. Por tal
+motivo, se debe especificar la dirección IP en la que se corre el servicio:
+
+En ec.edu.monster.modelo ConvUniModelo.java: línea 16
+	private static final String URL = "http://<IP de su equipo>/CONVUNI/ec.edu.monster.servicios/CONVUNI.svc";
+
+En res/xml/network_security_config.xml:
+
+	<?xml version="1.0" encoding="utf-8"?>
+	<network-security-config>
+	    <domain-config cleartextTrafficPermitted="true">
+	        <domain includeSubdomains="true">SU DIRECCIÓN IP</domain>
+	    </domain-config>
+	</network-security-config>
+
+Gracias por la atención.
+
+Atentamente,
+David Guarderas Leal
