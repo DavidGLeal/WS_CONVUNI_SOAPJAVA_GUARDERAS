@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(30, 24, 59);
+    background-image: url("https://cdn.vox-cdn.com/thumbor/QSOpFLyAOOHsV3-SmxfCr0cXMnM=/80x0:940x573/2050x1367/cdn.vox-cdn.com/assets/2804573/monsters_university1_1_1020.jpg");
+    background-size: cover;
+    background-blend-mode:lighten;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    text-align: center;
+    color:white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.tit{
+    color:white;
+    text-align: center;
+}
+
+.operacion{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5% 0;
+    width:100%;
+}
+
+.operacion p{
+    color:white;
+    font-weight: bold;
+    margin-left:1%;
+}
+
+.botonOperar{
+    display:flex;
+    align-items:center;
+    margin: 0 2%;
+    font-weight: bold;
+    height: 35px;
+    color: white;
+    font-size: medium;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(11, 4, 44, 0.671);
+    background-color: rgba(182, 126, 255, 0.781);
+    padding: 1.5%;
+}
+
+.operacion input{
+    height: 75px;
+    font-size: large;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(11, 4, 44, 0.671);
+}
+
+.inputKg{
+    background-color: rgba(126, 150, 255, 0.781);
+}
+
+.inputLb{
+    background-color: rgba(255, 126, 126, 0.781);
+}
+
+.output{
+    color: black;
+}
+
+hr{
+    width: 40%;
+}
+
+#cerrar{
+    background-color: rgb(168, 53, 53);
+    border:none;
+    color: white;
+    border-radius: 5px;
+    width:fit-content;
+    box-shadow: 2px 2px 2px rgba(11, 4, 44, 0.671);
+    padding: .5%;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+}
+
+#error{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(87, 240, 87, 0.76);
+    width: 30%;
+    height: 30%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(11, 4, 44, 0.671);
+    line-height: 0.7;
+    display: none;
+}
+
+#error h4{
+    font-size: 18pt;
+    font-weight: bolder;
+    color: rgb(133, 0, 0);
+}
+
+#error button{
+    position: absolute;
+    bottom:10%;
+    right: 5%;
+    border:none;
+    background-color: rgb(133, 0, 0);
+    color:white;
+    font-weight: bolder;
+    padding: 1% 2%;
+    box-shadow: 2px 2px 2px rgba(11, 4, 44, 0.671);
+    border-radius: 3px;
+    cursor: pointer;
+}
